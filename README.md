@@ -17,7 +17,7 @@ require 'escape_utils'
 gem 'uri_template'
 require 'uri_template'
 
-UriTemplate::Utils.using_escape_utils? #=> true
+URITemplate::Utils.using_escape_utils? #=> true
 ```
 
 ## Examples
@@ -59,4 +59,4 @@ URITemplate.new('{?variable}').expand('variable' => 'value') #=> "?variable=valu
 
 ## Benchmarks
 
-I have assembled one benchmark based on the uritemplate-test examples. You can find them in the "benchmarks" folder. The short result: uri_template is 2-10x faster than addressable on ruby 1.9.3.
+I have assembled one benchmark based on the URITemplate-test examples. You can find them in the "benchmarks" folder. The short result: uri_template is 2-10x faster than addressable on ruby 1.9.3.
